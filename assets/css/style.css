@@ -878,9 +878,18 @@ body {
 	overflow: hidden;
 }
 
+.features-text h1 {
+	font-family: 'Roboto';
+	font-size: 31px;
+	color: #222222;
+	font-weight: 600;
+	line-height: 1.2;
+	margin: 0 0 20px 0;
+}
+
 .features-text h2 {
 	font-family: 'Roboto';
-	font-size: 28px;
+	font-size: 24px;
 	color: #222222;
 	font-weight: 300;
 	line-height: 1.2;
