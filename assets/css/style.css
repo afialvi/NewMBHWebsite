@@ -865,7 +865,11 @@ body {
 /*--------------------------------------------------------------
 ----------------- Features Section Stying Starts ---------------
 --------------------------------------------------------------*/
-
+.seo-links a{
+	color: #D3D3D3;
+	width: 100%;
+	text-align: center;
+}
 
 .features {
 	background: #FFFFFF;
