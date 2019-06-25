@@ -157,17 +157,24 @@ body {
 	top: 2%;
 	z-index: 11;
 }
+.title-image{
+	width: 250px;
+	height: 60px;
+	margin-top: -10%;
+}
 .mbh-custom-btn{
 	border-radius: 5px !important;
 	/*background-color: transparent !important; */
 	border-color: #FF8960 !important;
-	/*box-shadow: 5px 10px #FF8960 !important;*/
-	background-image: linear-gradient(to right, #FF62A5, #FF8960) !important;
+	box-shadow: 0px 10px 30px rgba(0,0,0,0) !important;
+	background-image: linear-gradient(to right, rgba(255, 98, 165, 1.0), rgba(255, 137, 96, 1.0), #FF8960) !important;/*linear-gradient(to right, #FF62A5, #FF8960) !important;*/
 }
 .mbh-title{
 	color: #FF8960 !important;
 }
-
+.mbh-app-image{
+	background-color: transparent !important;
+}
 
 /* ------ Navbar Styling Starts ----- */
 
@@ -900,7 +907,7 @@ body {
 	font-family: 'Roboto';
 	font-size: 31px;
 	color: #222222;
-	font-weight: 400;
+	font-weight: 380;
 	line-height: 1.2;
 	margin: 0 0 20px 0;
 }
