@@ -662,7 +662,7 @@ body {
 
 .flex-split .f-right {
 	flex: 1 0 50%;
-	background: linear-gradient(to right, rgba(47, 204, 115, 0), rgba(47, 204, 115, 0.9)), url(../images/ios11.jpg) no-repeat center center;
+	background: linear-gradient(to right, rgba(255, 98, 165, 0), rgba(255, 137, 96, 0.7)), url(../images/ios11.jpg) no-repeat center center;
 	background-size: cover;
 }
 
