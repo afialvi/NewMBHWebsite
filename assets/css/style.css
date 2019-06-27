@@ -158,9 +158,9 @@ body {
 	z-index: 11;
 }
 .title-image{
-	width: 300px;
-	height: 60px;
-	margin-top: -10%;
+	width: 260px;
+	height: 23px;
+	/*margin-top: -10%;*/
 }
 .mbh-custom-btn{
 	border-radius: 5px !important;
