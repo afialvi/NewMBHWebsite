@@ -1,0 +1,44 @@
+/* -------------------------------------------------------
+----------- Bact-to-Top Styling Starts Here --------------
+---------------------------------------------------------*/
+
+.back-to-top {
+	background: rgba(51, 51, 204, 0.9);
+	margin: 0;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	z-index: 90;
+	display: none;
+	text-decoration: none;
+	color: #0e1729;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top i {
+	position: relative;
+	left: 14px;
+	top: 8px;
+	font-size: 28px;
+	color: #ffffff;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+
+.back-to-top:hover {
+	background: rgba(51, 51, 204, 0.9);
+	color: #ffffff;
+}
+
+.back-to-top:hover i {
+	top: 6px;
+}
+
+.back-to-top:focus {
+	color: #ffffff;
+}

@@ -1,0 +1,41 @@
+/*-----------------------------------------------------------
+----------------- Pitch Section Stying Starts ---------------
+-----------------------------------------------------------*/
+
+.pitch-2 {
+	width: 100%;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+		url(../img/cta.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 150px 0 150px 0;
+}
+
+.pitch-inner {
+	max-width: 500px;
+	float: right;
+}
+
+.pitch-inner h4 {
+	font-family: 'Nunito';
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.pitch-inner h1 {
+	font-family: 'Nunito';
+	font-size: 28px;
+	line-height: 1.2;
+	margin-top: 20px;
+	color: #ffffff;
+}
+
+.pitch-inner p {
+	font-family: 'Nunito';
+	font-size: 14px;
+	line-height: 1.5;
+	margin-top: 20px;
+	color: #ffffff;
+}

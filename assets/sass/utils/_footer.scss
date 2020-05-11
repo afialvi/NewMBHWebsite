@@ -1,0 +1,74 @@
+/*------------ Footer Lg Styling ---------------*/
+
+.footer {
+	background: #ffffff;
+	padding: 50px 0 50px 0;
+}
+
+.footer .ft-left .footer-img {
+	padding: 0 0 10px 0;
+}
+
+.footer .ft-left p {
+	font-family: 'Nunito';
+	font-size: 14px;
+	color: #848484;
+	line-height: 1.5;
+	letter-spacing: 0;
+	margin-top: 15px;
+}
+
+.footer .footer-social ul {
+	list-style-type: none;
+	margin-top: 10px;
+}
+
+.footer .footer-social ul li {
+	display: inline;
+	margin-right: 5px !important;
+	background: #ffffff;
+}
+
+.footer .footer-social li a i {
+	display: inline-block;
+	color: #242424;
+	font-size: 18px;
+	margin-right: 5px !important;
+	font-weight: normal;
+}
+
+.ft-right {
+	padding: 25px 0 0 0;
+}
+
+.ft-right ul {
+	list-style-type: none;
+	-webkit-columns: 2;
+	columns: 2;
+	padding: 0;
+}
+
+.ft-right ul li {
+	font-family: 'Nunito';
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 2.5;
+}
+
+.ft-right ul li a {
+	color: #454545;
+	text-decoration: none;
+}
+
+.ft-right ul li a:hover {
+	color: #41cd52;
+}
+
+.footer .ft-right p {
+	font-family: 'Roboto';
+	font-size: 12px;
+	color: #848484;
+	line-height: 1.5;
+	letter-spacing: 0;
+	margin-top: 10px;
+}

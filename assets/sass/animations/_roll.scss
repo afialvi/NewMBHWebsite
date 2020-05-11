@@ -1,0 +1,52 @@
+@include keyframes(rollIn) {
+    0% {
+        opacity: 0;
+        -webkit-transform: transform-translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+        transform: transform-translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.rollIn {
+    -webkit-animation-name: rollIn;
+    animation-name: rollIn;
+}
+
+@include keyframes(rollOut) {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: transform-translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+        transform: transform-translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    }
+}
+
+.rollOut {
+    -webkit-animation-name: rollOut;
+    animation-name: rollOut;
+}
+
+@include keyframes(drop) {
+    0% {
+        opacity: 0;
+        @include translateY(-100%);
+    }
+    20% {
+        opacity: 1;
+        @include translateY(0px);
+    }
+    80% {
+        opacity: 1;
+        @include translateY(0px);
+    }
+    100% {
+        opacity: 0;
+        @include translateY(100%);
+    }
+}

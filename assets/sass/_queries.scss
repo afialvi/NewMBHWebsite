@@ -1,0 +1,204 @@
+/*-----------------------------------------------------
+-------------------------------------------------------
+------------------- All Media Queries------------------
+-------------------------------------------------------
+-----------------------------------------------------*/
+
+@media only screen and (min-width: 767px) {
+	.hero {
+		padding: 100px 0 50px 0;
+	}
+
+	.hero .intro {
+		padding: 100px 0 75px 0;
+	}
+
+	.hero .intro h1 {
+		font-size: 58px;
+	}
+
+	.hero .intro h1 span {
+		font-size: 54px;
+	}
+
+	.hero .intro p {
+		font-size: 16px;
+	}
+
+	.hero-2 {
+		padding: 150px 0 50px 0;
+	}
+
+	.hero-2 .intro {
+		padding: 125px 0 0 0;
+	}
+
+	.hero-2 .intro h1 {
+		font-size: 48px;
+	}
+
+	.hero-2 .intro p {
+		font-size: 14px;
+	}
+
+	.hero-2 img {
+		margin-top: 0;
+	}
+
+	.points-intro h1 {
+		font-size: 34px;
+	}
+
+
+
+	.cta-2-inner h1 {
+		font-size: 34px;
+	}
+
+	.main-2 .cta-inner {
+		margin: 150px 0 0 0;
+		float: right;
+		text-align: justify;
+	}
+
+	.dwnld-inner .app-info h1 {
+		font-size: 34px;
+		margin: 20px 0 20px 0;
+	}
+
+	.dwnld-inner .app-info h4 {
+		font-size: 16px;
+	}
+
+	.pricing-v2 {
+		padding: 100px 0 100px 0;
+	}
+
+	.review-section {
+		padding: 100px 0 100px 0;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+	.hero {
+		padding: 150px 0 50px 0;
+	}
+
+	.hero .intro {
+		padding: 50px 0 50px 0;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.hero-2 .intro {
+		padding: 50px 0 0 0;
+	}
+
+	.hero-2 .intro h1 {
+		font-size: 42px;
+		font-weight: 600;
+		line-height: 1;
+	}
+
+	.hero-2 .intro p {
+		max-width: 300px;
+	}
+}
+
+@media only screen and (max-width: 766px) {
+	.flex-split .f-right {
+		flex: 1 0 50%;
+		height: 360px;
+	}
+
+	.hero-split .h-right {
+		flex: 1 0 50%;
+		height: 360px;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.hero .intro h1 {
+		font-size: 36px;
+	}
+
+	.hero .intro h1 span {
+		font-size: 36px;
+	}
+
+	.hero .intro p {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.features-text {
+		padding: 100px 0 0 0;
+	}
+
+	.main-2 .cta-inner {
+		margin: 150px 0 0 0;
+		float: none;
+		text-align: justify;
+	}
+}
+
+@media screen and (max-width: 399px) {
+	.cta-sub {
+		text-align: center;
+	}
+
+	.subscribe-form {
+		text-align: center;
+	}
+
+	.formee input {
+		text-align: center;
+		padding: 0 0 0 0;
+		border-radius: 5px 0 0 5px;
+	}
+
+	.formee .right {
+		padding: 0 5px 0 5px;
+		border-radius: 0 5px 5px 0;
+		margin-top: 15px;
+	}
+
+	.form .sub-form .subscribe-form {
+		text-align: left;
+	}
+
+	.form .sub-form .formee input {
+		text-align: center;
+		padding: 0 0 0 0;
+		border-radius: 5px 0 0 5px;
+	}
+
+	.form .sub-form .formee .right {
+		padding: 0 5px 0 5px;
+		border-radius: 0 5px 5px 0;
+		margin-top: 15px;
+	}
+
+	.back-to-top {
+		right: 10px;
+	}
+}
+
+@media screen and (max-width: 399px) {
+	.subscribe-form {
+		text-align: center;
+	}
+
+	.subscribe-form .mail {
+		text-align: center;
+		padding: 0 0 0 0;
+		border-radius: 5px 0 0 5px;
+	}
+
+	.subscribe-form .submit-button {
+		padding: 0 5px 0 5px;
+		border-radius: 0 5px 5px 0;
+		margin-top: 15px;
+	}
+}

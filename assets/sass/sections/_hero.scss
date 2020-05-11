@@ -1,0 +1,154 @@
+/*---------------------------------------------------------------------
+---------------- All Hero Sections Styling Starts Here ----------------
+---------------------------------------------------------------------*/
+
+.hero {
+	padding: 100px 0 50px 0;
+	/*background: linear-gradient(to right bottom,#3b1f5d,#633c84,#a25fa7,#b672ba);
+	background: #7B4EFF;
+	*/
+	background: url(../img/1.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.hero img {
+	max-width: 100%;
+}
+
+.hero .intro {
+	padding: 75px 0 75px 0;
+}
+
+.hero .intro h1 {
+	font-family: 'Nunito';
+	font-size: 42px;
+	font-weight: 400;
+	line-height: 1.1;
+	letter-spacing: 0;
+	color: #09102b;
+}
+
+.hero .intro h1 span {
+	font-size: 42px;
+	font-weight: 400;
+	letter-spacing: -1px;
+	color: #41cd52;
+}
+
+.hero .intro p {
+	font-family: 'Nunito';
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.4;
+	letter-spacing: 1px;
+	color: #53586b;
+	max-width: 700px;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+
+.hero .form-footer p {
+	font-family: 'Nunito';
+	color: #5d6a7b;
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin-top: 10px;
+}
+
+.hero-2 {
+	padding: 150px 0 50px 0;
+	background: #ffffff;
+}
+
+.hero-2 .intro {
+	padding: 0 0 0 0;
+}
+
+.hero-2 .intro h1 {
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 1.1;
+	color: #333333;
+}
+
+.hero-2 .intro p {
+	font-size: 14px;
+	font-family: 'Nunito';
+	line-height: 1.4;
+	color: #848484;
+	max-width: 400px;
+	margin-top: 20px;
+}
+
+.hero-2 img {
+	margin-top: 30px;
+}
+
+.btn-action {
+	padding: 0.5rem 1.5rem;
+	background: #41cd52;
+	border: 1px solid;
+	border-color: #41cd52;
+	border-radius: 0.125rem;
+	box-shadow: 0 10px 30px rgba(65, 205, 82, 0.5);
+	margin: 24px 12px 0 0;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.btn-action:hover {
+	color: #ffffff;
+	border-color: #41cd52;
+	background: #41cd52;
+	-webkit-transform: translateY(-2px);
+	-moz-transform: translateY(-2px);
+	transform: translateY(-2px);
+}
+
+.intro .btn-action {
+	background: #41cd52;
+}
+
+.intro .btn-action:hover {
+	background: #41cd52;
+}
+
+.btn-action span {
+	font-family: 'Nunito';
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	color: #ffffff;
+	display: inline;
+}
+
+.intro .btn-action span {
+	font-family: 'Nunito';
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: capitalize;
+	letter-spacing: 0.5px;
+	color: #fff;
+	display: inline;
+}
+
+.intro .btn-action i {
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.4;
+	margin: 0 12px 0 6px;
+}
+
+.btn-action:hover span {
+	color: #ffffff;
+}
+
+.intro .btn-action:hover span {
+	color: #ffffff;
+}
+
+.intro .btn-action:hover i {
+	color: #ffffff;
+}
