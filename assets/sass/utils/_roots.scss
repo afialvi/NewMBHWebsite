@@ -1,0 +1,42 @@
+:root {
+	@each $color, $value in $colors {
+		$dashColor: "--" + $color;
+		@for $i from 1 through 10 {
+			@if $i == 10 {
+				#{$dashColor}: #{$value};
+			} @else {
+				#{$dashColor}-alpha#{$i}: rgba($value, $i/10);
+			}
+		}
+		#{$dashColor}-light: lighten($value, 12%);
+		#{$dashColor}-dark: darken($value, 12%);
+	}
+	@each $color, $value in $notifColors {
+		$dashColor: "--" + $color;
+		@for $i from 1 through 10 {
+			@if $i == 10 {
+				#{$dashColor}: #{$value};
+			} @else {
+				#{$dashColor}-alpha#{$i}: rgba($value, $i/10);
+			}
+		}
+		#{$dashColor}-light: lighten($value, 12%);
+		#{$dashColor}-dark: darken($value, 12%);
+	}
+	@each $color, $value in $socialColors {
+		$dashColor: "--" + $color;
+		@for $i from 1 through 10 {
+			@if $i == 10 {
+				#{$dashColor}: #{$value};
+			} @else {
+				#{$dashColor}-alpha#{$i}: rgba($value, $i/10);
+			}
+		}
+		#{$dashColor}-light: lighten($value, 12%);
+		#{$dashColor}-dark: darken($value, 12%);
+	}
+
+	--monospace: "Inconsolata", monospace, SFMono-Regular, Menlo, Monaco, Consolas, Courier, "Liberation Mono", "Courier New";
+	--montserrat: "Montserrat", sans-serif;
+	--roboto: "Roboto", sans-serif;
+}

@@ -10,10 +10,9 @@ jQuery(function ($) {
 		// we round here to reduce a little workload
 		stop = Math.round($(window).scrollTop());
 		if (stop > mainbottom) {
-			$('.navbar').addClass('past-main');
-			$('.navbar').addClass('effect-main')
+			$('.navbar').addClass('past-main effect-main');
 		} else {
-			$('.navbar').removeClass('past-main');
+			$('.navbar').removeClass('past-main effect-main');
 		}
 	});
 
@@ -39,8 +38,21 @@ jQuery(function ($) {
 	new WOW().init();
 
 	/* ------- Magnific Popup ---------*/
+	$('.signupPopup').magnificPopup({
+		type: 'inline',
+		mainClass: 'mfp-fade',
+		preloader: true,
+		removalDelay: 300
+	});
 
-	$('.cusotmPopup').magnificPopup({
+	$('.gamePopup').magnificPopup({
+		type: 'inline',
+		mainClass: 'mfp-fade',
+		preloader: true,
+		removalDelay: 300
+	});
+
+	$('.startGame').magnificPopup({
 		type: 'inline',
 		mainClass: 'mfp-fade',
 		preloader: true,
@@ -50,7 +62,6 @@ jQuery(function ($) {
 	/*-------- Owl Carousel ---------- */
 
 	$(".reviews").owlCarousel({
-
 		slideSpeed: 200,
 		items: 1,
 		singleItem: true,

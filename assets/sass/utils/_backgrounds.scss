@@ -1,0 +1,36 @@
+.bg-transparent {
+	background: transparent !important;
+}
+@each $color, $value in $colors {
+	$dashColor: "--" + $color;
+	@for $i from 1 through 10 {
+		@if $i == 10 {
+			.bg-#{$color} {
+				background-color: var(#{$dashColor}) !important;
+			}
+		} @else {
+			.bg-#{$color}-alpha#{$i} {
+				background-color: rgba($value, $i/10) !important;
+			}
+		}
+	}
+	.bg-#{$color}-light {
+		background-color: var(#{$dashColor}-light) !important;
+	}
+	.bg-#{$color}-dark {
+		background-color: var(#{$dashColor}-dark) !important;
+	}
+	@if ($color == "white" or $color == "off-white" or $color == "gray") {
+		.bg-#{$color},
+		.bg-#{$color}-light,
+		.bg-#{$color}-dark {
+			color: var(--black) !important;
+		}
+	} @else {
+		.bg-#{$color},
+		.bg-#{$color}-light,
+		.bg-#{$color}-dark {
+			color: var(--white) !important;
+		}
+	}
+}

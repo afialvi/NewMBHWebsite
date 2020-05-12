@@ -1,0 +1,19 @@
+@each $color, $value in $colors {
+	@for $i from 1 through 10 {
+		@if $i == 10 {
+			.text-#{$color} {
+				color: #{$value} !important;
+			}
+		} @else {
+			.text-#{$color}-alpha#{$i} {
+				color: rgba($value, $i/10) !important;
+			}
+		}
+	}
+	.text-#{$color}-light {
+		color: lighten($value, 12%) !important;
+	}
+	.text-#{$color}-dark {
+		color: darken($value, 12%) !important;
+	}
+}
