@@ -45,14 +45,21 @@ jQuery(function ($) {
 		removalDelay: 300
 	});
 
-	$('.gamePopup').magnificPopup({
+	$('.gameStart').magnificPopup({
 		type: 'inline',
 		mainClass: 'mfp-fade',
 		preloader: true,
 		removalDelay: 300
 	});
 
-	$('.startGame').magnificPopup({
+	$('.genderSelection').magnificPopup({
+		type: 'inline',
+		mainClass: 'mfp-fade',
+		preloader: true,
+		removalDelay: 300
+	});
+
+	$('.faqs').magnificPopup({
 		type: 'inline',
 		mainClass: 'mfp-fade',
 		preloader: true,

@@ -1,0 +1,108 @@
+.hAuto {
+	height: auto !important;
+}
+@for $value from 0 through 100 {
+	.h#{$value} {
+		height: percentage($value/100) !important;
+	}
+}
+@for $value from 0 through 100 {
+	.h-#{$value} {
+		height: #{$value + "px"} !important;
+	}
+}
+
+.lh-inherit {
+	line-height: inherit !important;
+}
+@for $value from 0 through 100 {
+	.lh-#{$value} {
+		line-height: #{$value + "px"} !important;
+	}
+}
+
+.wAuto {
+	width: auto !important;
+}
+@for $value from 0 through 100 {
+	.w#{$value} {
+		width: percentage($value/100) !important;
+	}
+}
+@for $value from 0 through 300 {
+	.w-#{$value} {
+		width: #{$value + "px"} !important;
+	}
+}
+@for $value from 0 through 100 {
+	.min-w-#{$value} {
+		width: #{$value + "px"} !important;
+	}
+}
+
+@for $value from 0 through 100 {
+	.p-#{$value} {
+		padding: #{$value + "px"} !important;
+	}
+	.p-t-#{$value} {
+		padding-top: #{$value + "px"} !important;
+	}
+	.p-r-#{$value} {
+		padding-right: #{$value + "px"} !important;
+	}
+	.p-b-#{$value} {
+		padding-bottom: #{$value + "px"} !important;
+	}
+	.p-l-#{$value} {
+		padding-left: #{$value + "px"} !important;
+	}
+	.p-l-r-#{$value} {
+		padding-left: #{$value + "px"} !important;
+		padding-right: #{$value + "px"} !important;
+	}
+	.p-t-b-#{$value} {
+		padding-top: #{$value + "px"} !important;
+		padding-bottom: #{$value + "px"} !important;
+	}
+}
+
+.mAuto {
+	margin: auto !important;
+}
+@for $value from 0 through 100 {
+	.m-#{$value} {
+		margin: #{$value + "px"} !important;
+	}
+	.m-t-#{$value} {
+		margin-top: #{$value + "px"} !important;
+	}
+	.m-r-#{$value} {
+		margin-right: #{$value + "px"} !important;
+	}
+	.m-b-#{$value} {
+		margin-bottom: #{$value + "px"} !important;
+	}
+	.m-l-#{$value} {
+		margin-left: #{$value + "px"} !important;
+	}
+	.m-l-r-#{$value} {
+		margin-left: #{$value + "px"} !important;
+		margin-right: #{$value + "px"} !important;
+	}
+	.m-t-b-#{$value} {
+		margin-top: #{$value + "px"} !important;
+		margin-bottom: #{$value + "px"} !important;
+	}
+}
+
+@for $value from 1 through 60 {
+	.fs-#{$value} {
+		font-size: #{$value + "px"} !important;
+	}
+}
+
+@for $value from 4 through 9 {
+	.fw-#{$value} {
+		font-weight: #{$value * 100} !important;
+	}
+}

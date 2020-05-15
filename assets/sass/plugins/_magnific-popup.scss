@@ -64,7 +64,8 @@
 			@extend %posRelative;
 			#signupPopup,
 			#gameStart,
-			#genderSelection {
+			#genderSelection,
+			#faqs {
 				@extend %floatToCenter;
 				object-fit: contain;
 				background-color: #fff;
@@ -75,28 +76,27 @@
 				> div {
 					display: flex;
 					justify-content: center;
+					align-items: center;
 					flex-direction: column;
 					margin: 0 auto;
 					a {
 						text-decoration: underline !important;
 					}
-					> h4,
-					> p,
-					> input {
+					h4,
+					p {
 						font-stretch: normal;
 						font-style: normal;
 						line-height: normal;
 						text-align: center;
 
 					}
-					> h4 {
+					h4 {
 						font-size: 21px;
 						letter-spacing: 0.13px;
 						font-weight: 600;
 						margin-bottom: 20px;
 					}
-
-					> p {
+					p {
 						font-size: 12px;
 						letter-spacing: 0.07px;
 						font-weight: 400;
@@ -110,33 +110,64 @@
 						color: #fff;
 					}
 				}
+				.question-counter {
+					position: absolute;
+					left: 50px;
+					top: 50px;
+					font-size: 12px;
+					letter-spacing: 0.07px;
+					text-align: center;
+					color: var(--black-light);
+				}
 				.pagination {
+					width: 100%;
 					display: flex;
 					justify-content: space-between;
 					margin: 0;
 				}
+				.popup-slider {
+					min-height: 604px;
+					position: relative;
+					@include phone_and_tabletP {
+						display: none;
+					}
+					> ul {
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						overflow: hidden;
+						border-top-right-radius: 25px;
+						border-bottom-right-radius: 25px;
+						> li {
+						}
+					}
+				}
 			}
 			#signupPopup {
-				background: url('../img/subscribe-bg.jpg') center center no-repeat;
+				background: url('../img/subscribe-bg.png') center center no-repeat;
 				height: 533px;
 				@include tabletP {
 					width: 600px;
 				}
 				> div {
 					width: 350px;
-					> h4,
-					> p,
+					h4,
+					p,
 					> input {
 						color: #ffffff;
 					}
-					> h4 {
+					h4 {
 						margin-top: 80px;
 						margin-bottom: 30px;
 					}
-					> p {
+					p {
 						margin-bottom: 80px;
 					}
 					> input {
+						width: 100%;
 						height: 48px;
 						font-size: 15px;
 						border-radius: 5px;
@@ -150,11 +181,14 @@
 							color: #fff;
 						}
 					}
+					> button {
+						width: 100%;
+					}
 				}
 			}
-			#gameStart,
-			#genderSelection {
+			#gameStart {
 				padding: 20px;
+				height: auto;
 				@include tabletP {
 					width: 350px;
 				}
@@ -162,10 +196,32 @@
 					width: 100%;
 				}
 			}
+			#genderSelection,
+			#faqs {
+				height: auto;
+				@include tabletP {
+					width: 460px;
+				}
+				> div {
+					padding: 50px;
+					width: 100%;
+				}
+			}
+			#faqs {
+				@include tabletP {
+					width: 760px;
+				}
+				> div {
+					padding: 0;
+				}
+			}
 		}
 	}
 }
 
+.mfp-hide {
+	display: none;
+}
 
 .mfp-align-top .mfp-container:before {
 	display: none;
@@ -218,10 +274,6 @@
 
 .mfp-loading.mfp-figure {
 	display: none;
-}
-
-.mfp-hide {
-	display: none !important;
 }
 
 .mfp-preloader {
