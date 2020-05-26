@@ -89,6 +89,9 @@
 			transform: rotate(-45deg);
 			z-index: -4;
 			@include phone {
+				display: none;
+			}
+			@include phoneL {
 				width: 50px;
 				height: 90px;
 			}
@@ -105,26 +108,49 @@
 }
 .blobTitle {
 	min-height: 120px;
-	margin-bottom: 30px;
+	@include phone {
+		margin-bottom: 50px;
+	}
+	@include tabletP {
+		margin-bottom: 30px;
+	}
 	.blob-heading {
 		position: absolute;
 		background: var(--blob-title) !important;
 		transition: all 1s ease-in-out;
 		&.shape-title {
 			top: 0px;
-			left: -50px;
 			border-radius: 0px / 100%;
 			animation: blob-morph 5s ease-in-out infinite;
 			z-index: -4;
 			height: 120px;
-			padding: 30px 60px 30px 30px;
 			display: flex;
 			align-items: center;
-			justify-content: flex-end;
+			@include phone {
+				width: 100%;
+				justify-content: center;
+				left: 0;
+				padding: 30px;
+			}
+			@include tabletP {
+				justify-content: flex-end;
+				left: -50px;
+				padding: 30px 60px 30px 30px;
+			}
 			> h2 {
 				font-family: 'New York Small Regular';
 				font-size: 30px;
 				color: var(--white);
+			}
+			&.shape-title-1 {
+				@include tabletP {
+					width: 600px;
+				}
+			}
+			&.shape-title-2 {
+				@include tabletP {
+					width: 700px;
+				}
 			}
 		}
 	}

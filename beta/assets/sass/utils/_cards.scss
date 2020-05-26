@@ -2,10 +2,12 @@
 	padding: 60px 0;
 	.cards {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: flex-start;
 		flex-direction: row;
+		flex-wrap: wrap;
 		.card {
+			margin: 0 17px 17px 17px;
 			width: 385px;
 			height: max-content;
 			.card-img {
