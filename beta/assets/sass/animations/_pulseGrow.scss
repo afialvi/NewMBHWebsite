@@ -1,0 +1,35 @@
+.pulseGrow {
+	@extend %posAbsolute;
+	background:none;
+	border-radius: 50%;
+	border:3px dotted #000;
+	@include animation(pulseGrow 1.5s infinite normal);
+	&:hover {
+	border:3px solid #000;
+	}
+	.pulse1 { animation-delay:0.2s; }
+	.pulse2 { animation-delay:0.4s; }
+	.pulse3 { animation-delay:0.6s; }
+	.pulse4 { animation-delay:0.8s; }
+}
+
+@include keyframes(pulseGrow){
+	0% {
+		width:10%;
+		height:10%;
+		left:40%;
+		top:40%;
+		opacity:0;
+	}
+	10% {
+		opacity:1;
+	}
+	100% {
+		width:40%;
+		height:40%;
+		left:25%;
+		top:25%;
+		opacity:0;
+	}
+}
+

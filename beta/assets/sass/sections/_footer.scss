@@ -1,0 +1,14 @@
+#footer {
+	background-color: #f8f8fb;
+	padding: 60px 0;
+	letter-spacing: 0.09px;
+	color: #000000;
+	.footer-nav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		li {
+			margin: 0 24px;
+		}
+	}
+}
