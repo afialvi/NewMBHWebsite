@@ -1,9 +1,11 @@
 :root {
 	--blob: #fcd0ce;
 	--blob-dark: #f8bdba;
+	--blob-title: #ff8c79;
 }
 
-#blobContainer {
+.blobTitle,
+.blobContainer {
 	position: relative;
 	@include phone {
 		min-height: 600px;
@@ -14,6 +16,8 @@
 	@include desktop {
 		min-height: 1500px;
 	}
+}
+.blobContainer {
 	.blob-shape {
 		position: absolute;
 		background: linear-gradient(45deg, var(--blob) 0%, var(--blob-dark) 100%);
@@ -99,7 +103,32 @@
 		}
 	}
 }
-
+.blobTitle {
+	min-height: 120px;
+	margin-bottom: 30px;
+	.blob-heading {
+		position: absolute;
+		background: var(--blob-title) !important;
+		transition: all 1s ease-in-out;
+		&.shape-title {
+			top: 0px;
+			left: -50px;
+			border-radius: 0px / 100%;
+			animation: blob-morph 5s ease-in-out infinite;
+			z-index: -4;
+			height: 120px;
+			padding: 30px 60px 30px 30px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			> h2 {
+				font-family: 'New York Small Regular';
+				font-size: 30px;
+				color: var(--white);
+			}
+		}
+	}
+}
 @keyframes blob-morph {
 	0% {
 		border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
