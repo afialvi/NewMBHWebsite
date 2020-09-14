@@ -1,8 +1,0 @@
-.trans_3D {
-    @include transform-dual(perspective(400) 50%, rotate3d(1, 0, 0, -90deg) 0);
-    @extend %transitionAll300;
-    z-index: #{$zindex-dropdown};
-    &.active {
-        @include transform-dual(perspective(400), rotate3d(0, 0, 0, 0));
-    }
-}
