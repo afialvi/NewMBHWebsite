@@ -234,5 +234,7 @@ li {
   }
   .offers {
     margin-left: 0;
+    align-items: center;
+    font-size: 14px;
   }
 }
